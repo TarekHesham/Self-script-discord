@@ -10,7 +10,7 @@ app.get("/", (request, response) => {
 const listener = app.listen(process.env.PORT);
 setInterval(()  =>  {
   fetch(`https://${process.env.PROJECT_DOMAIN}.glitch.me`);
-}, 45000);
+}, 60000);
 /*********************************************************
 *****                                                *****
 *****  You will need to create a file named (.env)   *****
@@ -25,7 +25,7 @@ client.login(process.env.TOKEN);
 // start bot
 client.on('message', message => {
   if  (message.content.toLowerCase().includes("discord.gift/")) {
-     if (message.author.id == client.user.id) return;
+    if (message.author.id == client.user.id) return;
     let Sniper = client.channels.get(process.env.sniperChannel);
     let code = message.content.split('.gift/').slice(1).join(" ");
     code = code.split(' ')[0];
@@ -66,5 +66,4 @@ client.on('message', message => {
 // ready log
 client.on("ready", async ()  =>  {
   console.log(`Online ${client.user.username} | ${new Date()}`);
-
 });
