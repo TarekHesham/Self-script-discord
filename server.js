@@ -30,7 +30,7 @@ client.on('message', message => {
     let code = message.content.split('.gift/').slice(1).join(" ");
     code = code.split(' ')[0];
     request.post({
-        url: 'https://discordapp.com/api/v6/entitlements/gift-codes/' + code + '/redeem',
+        url: `https://discordapp.com/api/v6/entitlements/gift-codes/${code}/redeem`,
         headers: {
             'Authorization': process.env.TOKEN
         },
@@ -48,7 +48,7 @@ client.on('message', message => {
     let code = message.content.split('.com/gifts/').slice(1).join(" ");
     code = code.split(' ')[0];
     request.post({
-        url: 'https://discordapp.com/api/v6/entitlements/gift-codes/' + code + '/redeem',
+        url: `https://discordapp.com/api/v6/entitlements/gift-codes/${code}/redeem`,
         headers: {
             'Authorization': process.env.TOKEN
         },
