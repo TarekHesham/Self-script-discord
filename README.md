@@ -1,2 +1,14 @@
-# Self-bot
-Self bot Discord.js V11
+# Nitro sniper and auto Giveaway
+```*Discord.js v11*```
+------------------------------------------------------------------------
+
+### :inbox_tray: &nbsp; How to Use &nbsp; :inbox_tray:
+
+
+* `Download the files and then create a file name .env`
+
+* `Now add TOKEN and sniperChannel to a file .env`
+
+* `sniperChannel this is to receive notifications.`
+
+------------------------------------------------------------------------
